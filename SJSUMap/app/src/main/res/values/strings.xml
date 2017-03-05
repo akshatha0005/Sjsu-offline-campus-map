@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SJSUMap</string>
+    <string name="hint_search">Search by Building Name</string>
+    <string name="title_activity_detail_view">DetailView</string>
+    <string name="campusmap">SJSU_CampusMap</string>
+    <string name="library">Dr. Martin Luther King, Jr. Library, SJSU</string>
+    <string name="studentunion">Student Union, SJSU</string>
+    <string name="enggbldg">Charles W. Davidson College of Engineering, SJSU</string>
+    <string name="uchida">Yoshihiro Uchida Hall, SJSU</string>
+    <string name="bbc">Boccardo Business Center, SJSU</string>
+    <string name="southgarage">South Garage, SJSU</string>
+    <string name="library_addr">150 E San Fernando St, San Jose, CA 95112</string>
+    <string name="studentunion_addr">SJSU Student Union, 211 South 9th Street, San Jose, CA 95112</string>
+    <string name="enggbldg_addr">1 Washington Square, San Jose, CA 95112</string>
+    <string name="uchida_addr">Yoshihiro Uchida Hall, San Jose, CA 95112</string>
+    <string name="bbc_addr">220 S 10th St, San Jose, CA 95112</string>
+    <string name="southgarage_addr">377 S 7th St, San Jose, CA 95112</string>
+</resources>

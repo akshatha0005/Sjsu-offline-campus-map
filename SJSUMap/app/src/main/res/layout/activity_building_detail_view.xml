@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.sjsu.sjsumap.DetailView"
+    android:weightSum="1">
+
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine|textPersonName"
+        android:text="Charles W. Davidson College of Engineering, SJSU"
+        android:ems="10"
+        android:id="@+id/bldg_name"
+        android:layout_below="@+id/bldg"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:textStyle="bold"
+        tools:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="5px"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:contextClickable="false"
+        android:background="#00000000"
+        android:focusable="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine|textPersonName"
+        android:text="San José State University, 211 S 9th St, San Jose, CA 95112"
+        android:ems="10"
+        android:id="@+id/bldgAddress"
+        android:layout_below="@+id/bldg_name"
+        android:paddingBottom="5px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:isScrollContainer="false"
+        android:layout_toRightOf="@+id/distance_icon"
+        android:layout_toEndOf="@+id/distance_icon"
+        android:background="#00000000"
+        android:focusable="false"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/uchidahall"
+        android:id="@+id/bldg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:background="@drawable/bbc" />
+
+    <TextView
+        android:text="time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distance"
+        android:layout_toRightOf="@+id/timeLabel"
+        android:layout_toEndOf="@+id/timeLabel"
+        android:id="@+id/time"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/streetview"
+        android:id="@+id/streetView"
+        android:adjustViewBounds="false"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="57dp"
+        android:layout_alignBottom="@+id/bldg_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:elevation="0dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/location"
+        android:id="@+id/distance_icon"
+        android:layout_below="@+id/bldg_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/bldgAddress" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/distance"
+        android:layout_alignRight="@+id/distance_icon"
+        android:layout_alignEnd="@+id/distance_icon"
+        android:id="@+id/imageView2"
+        android:layout_above="@+id/timeLabel"
+        android:layout_alignTop="@+id/distanceLabel" />
+
+    <TextView
+        android:text="Walking Distance :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/distanceLabel"
+        android:textSize="18sp"
+        android:layout_above="@+id/time"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/distance"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/bldgAddress"
+        android:layout_toRightOf="@+id/distanceLabel"
+        android:layout_toEndOf="@+id/distanceLabel"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="Time Required :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeLabel"
+        android:textSize="18sp"
+        android:layout_below="@+id/distanceLabel"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView3"
+        android:layout_toStartOf="@+id/timeLabel"
+        android:layout_alignBottom="@+id/timeLabel"
+        android:layout_alignTop="@+id/timeLabel"
+        android:layout_toLeftOf="@+id/timeLabel" />
+
+    <TextView
+        android:text="miles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/distance"
+        android:layout_below="@id/bldgAddress"
+        android:id="@+id/mile"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="mins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/time"
+        android:layout_below="@id/mile"
+        android:id="@+id/min"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

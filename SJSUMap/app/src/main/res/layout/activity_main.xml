@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="edu.sjsu.sjsumap.MainActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/sjsumap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:baselineAlignBottom="true"
+        android:scaleType="fitCenter"
+        android:layout_gravity="bottom"
+        app:srcCompat="@drawable/campusmap" />
+
+    <ImageView
+        android:id="@+id/sjsucolored_map"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/campusmap_colored" />
+
+    <Button
+        android:layout_width="59dp"
+        android:layout_height="53dp"
+        android:id="@+id/gps"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/gps"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="8dp"/>
+
+
+</FrameLayout>
